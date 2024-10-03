@@ -3,12 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Delicia</title>
+    <!-- Enlace a los estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <title>Segunda Entrega</title>
 </head>
 <body>
-    <h1>Bienvenido a mi página web</h1>
-    <p>Este es un ejemplo de mi segunda entrega.</p>
-    <script src="js/script.js"></script>
+    <!-- Encabezado con menú de navegación -->
+    <header>
+        <div class="logo">
+            <h1>Panadería Delicia</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Sección de bienvenida -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Bienvenidos a Panadería Delicia</h2>
+            <p>¡Horneamos felicidad!</p>
+            <button>Ver más productos</button>
+        </div>
+    </section>
+
+    <!-- Sección de productos destacados -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="img/pan artesanal.png" alt="Pan artesanal">
+                    <h3>Pan Artesanal</h3>
+                    <p>$5.99</p>
+                </div>
+                <div class="producto">
+                    <img src="img/pastel de chocolate.png" alt="Pastel de chocolate">
+                    <h3>Pastel de Chocolate</h3>
+                    <p><span class="oferta">$20.99</span></p>
+                </div>
+                <div class="producto">
+                    <img src="img/galletas de mantequilla.png" alt="Galletas de mantequilla">
+                    <h3>Galletas de Mantequilla</h3>
+                    <p>$3.50</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de categorías -->
+    <section class="categorias" id="categorias">
+        <div class="container">
+            <h2>Categorías</h2>
+            <div class="categorias-grid">
+                <div class="categoria">
+                    <img src="img/pan-categorias.png" alt="Pan">
+                    <h3>Pan</h3>
+                </div>
+                <div class="categoria">
+                    <img src="img/pasteles-categorias.png" alt="Pasteles">
+                    <h3>Pasteles</h3>
+                </div>
+                <div class="categoria">
+                    <img src="img/galletas-categorias.png" alt="Galletas">
+                    <h3>Galletas</h3>
+                </div>
+                <div class="categoria">
+                    <img src="img/panaderia-ofertas.avif" alt="Ofertas Especiales">
+                    <h3>Ofertas Especiales</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonios" id="nosotros">
+        <div class="container">
+            <h2>Testimonios</h2>
+            
+            <div class="testimonios-content">
+                <div class="testimonial-img">
+                    <img src="img/panaderia-testimonios.png" alt="Pan artesanal" width="400px">
+                </div>
+                
+                <div class="testimonios-list" id="testimonios-list">
+                    <div class="testimonial">
+                        <img src="img/imagen mujer.png" alt="Testimonio de María Gómez">
+                        <div class="testimonial-text">
+                            <p>“Los pasteles son deliciosos, siempre compro aquí”</p>
+                            <span>— María Gómez</span>
+                        </div>
+                    </div>
+                    <div class="testimonial" style="display: none;">
+                        <img src="img/imagen hombre.png" alt="Testimonio de Carlos Pérez">
+                        <div class="testimonial-text">
+                            <p>“El pan fresco es incomparable, me encanta”</p>
+                            <span>— Carlos Pérez</span>
+                        </div>
+                    </div>
+                    <div class="testimonial" style="display: none;">
+                        <img src="img/imagen hombre 2.png" alt="Testimonio de Juan Vallego">
+                        <div class="testimonial-text">
+                            <p>“Uno de los mejores panes que he probado, excelente servicio”</p>
+                            <span>— Juan Vallego</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="toggle-testimonios">Mostrar más</button>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Sección de suscripción -->
+    <section class="suscripcion">        
+        </div>
+        <div class="container">
+            <h2>Suscríbete a nuestras promociones</h2>
+            <form id="subscribeForm">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" required>
+
+                <button type="submit">Suscribirse</button>
+            </form>
+            <img src="img/pan-artesanal.jpg " alt=" pan artesanal">
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div id="contacto" class="container">
+            <p>Contáctanos: 123-456-789</p>
+            <p>Síguenos en redes sociales: @panaderiadelicia</p>
+            <a href="#politicas">Políticas de privacidad</a>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
